@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid black;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.app-name{
+  font-size: 20px;
+}
+.img {
+    width: 100px;
+}
+
+.nav-items {
+    padding: 0px 70px; 
+    margin-top: 10px;
+}
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.nav-items > ul > li {
+    padding: 5px 10px;
+}
