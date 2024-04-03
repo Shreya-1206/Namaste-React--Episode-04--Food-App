@@ -19,104 +19,104 @@ const Header = () => {
         </div>
     )
 }
-const resdata = {"info": {
-    "id": "662650",
-    "name": "Starbucks Coffee",
-    "cloudinaryImageId": "2418209798927d733a50f5d2ebcc2aee",
-    "locality": "Uptown Square",
-    "areaName": "Whitefield - Hoskote Rd",
-    "costForTwo": "₹400 for two",
-    "cuisines": [
-      "Beverages",
-      "Cafe",
-      "Snacks",
-      "Desserts",
-      "Bakery",
-      "Ice Cream"
-    ],
-    "avgRating": 4.5,
-    "parentId": "195515",
-    "avgRatingString": "4.5",
-    "totalRatingsString": "100+",
-    "sla": {
-      "deliveryTime": 33,
-      "lastMileTravel": 6.4,
-      "serviceability": "SERVICEABLE",
-      "slaString": "30-35 mins",
-      "lastMileTravelString": "6.4 km",
-      "iconType": "ICON_TYPE_EMPTY"
-    },
-    "availability": {
-      "nextCloseTime": "2024-04-03 23:00:00",
-      "opened": true
-    },
-    "badges": {
+// const resdata = {"info": {
+//     "id": "662650",
+//     "name": "Starbucks Coffee",
+//     "cloudinaryImageId": "2418209798927d733a50f5d2ebcc2aee",
+//     "locality": "Uptown Square",
+//     "areaName": "Whitefield - Hoskote Rd",
+//     "costForTwo": "₹400 for two",
+//     "cuisines": [
+//       "Beverages",
+//       "Cafe",
+//       "Snacks",
+//       "Desserts",
+//       "Bakery",
+//       "Ice Cream"
+//     ],
+//     "avgRating": 4.5,
+//     "parentId": "195515",
+//     "avgRatingString": "4.5",
+//     "totalRatingsString": "100+",
+//     "sla": {
+//       "deliveryTime": 33,
+//       "lastMileTravel": 6.4,
+//       "serviceability": "SERVICEABLE",
+//       "slaString": "30-35 mins",
+//       "lastMileTravelString": "6.4 km",
+//       "iconType": "ICON_TYPE_EMPTY"
+//     },
+//     "availability": {
+//       "nextCloseTime": "2024-04-03 23:00:00",
+//       "opened": true
+//     },
+//     "badges": {
       
-    },
-    "isOpen": true,
-    "type": "F",
-    "badgesV2": {
-      "entityBadges": {
-        "imageBased": {
+//     },
+//     "isOpen": true,
+//     "type": "F",
+//     "badgesV2": {
+//       "entityBadges": {
+//         "imageBased": {
           
-        },
-        "textExtendedBadges": {
+//         },
+//         "textExtendedBadges": {
           
-        },
-        "textBased": {
+//         },
+//         "textBased": {
           
-        }
-      }
-    },
-    "aggregatedDiscountInfoV3": {
-      "header": "20% OFF",
-      "subHeader": "UPTO ₹50"
-    },
-    "loyaltyDiscoverPresentationInfo": {
-      "logoCtx": {
-        "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
-      },
-      "freedelMessage": "FREE DELIVERY",
-      "exclusiveOfferMessage": "EXTRA 10% OFF",
-      "badgeType": "BADGE_TYPE_ONE_LITE"
-    },
-    "differentiatedUi": {
-      "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-      "differentiatedUiMediaDetails": {
-        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-        "lottie": {
+//         }
+//       }
+//     },
+//     "aggregatedDiscountInfoV3": {
+//       "header": "20% OFF",
+//       "subHeader": "UPTO ₹50"
+//     },
+//     "loyaltyDiscoverPresentationInfo": {
+//       "logoCtx": {
+//         "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+//       },
+//       "freedelMessage": "FREE DELIVERY",
+//       "exclusiveOfferMessage": "EXTRA 10% OFF",
+//       "badgeType": "BADGE_TYPE_ONE_LITE"
+//     },
+//     "differentiatedUi": {
+//       "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//       "differentiatedUiMediaDetails": {
+//         "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+//         "lottie": {
           
-        },
-        "video": {
+//         },
+//         "video": {
           
-        }
-      }
-    },
-    "reviewsSummary": {
+//         }
+//       }
+//     },
+//     "reviewsSummary": {
       
-    },
-    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-    "restaurantOfferPresentationInfo": {
+//     },
+//     "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//     "restaurantOfferPresentationInfo": {
       
-    },
-    "externalRatings": {
-      "aggregatedRating": {
-        "rating": "--"
-      }
-    },
-    "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-  },
-  "analytics": {
+//     },
+//     "externalRatings": {
+//       "aggregatedRating": {
+//         "rating": "--"
+//       }
+//     },
+//     "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+//   },
+//   "analytics": {
     
-  },
-  "cta": {
-    "link": "swiggy://menu?restaurant_id=662650",
-    "text": "RESTAURANT_MENU",
-    "type": "DEEPLINK"
-  }
-};
+//   },
+//   "cta": {
+//     "link": "swiggy://menu?restaurant_id=662650",
+//     "text": "RESTAURANT_MENU",
+//     "type": "DEEPLINK"
+//   }
+// };
 
-const resObjs = [
+const resListOfObjs = [
     {
       "info": {
         "id": "45777",
@@ -1696,20 +1696,17 @@ const Body =() => {
                   deliveryTime = "30-35 mins"/> */}
 
               {/* this with the swiggy data using props  */}
+                {/* <RestaurantCard 
+                 resData= {resListOfObjs[0]}/>  
                 <RestaurantCard 
-                 resData= {resObjs[0]}/>  
-                <RestaurantCard 
-                 resData= {resObjs[1]}/>
-                <RestaurantCard 
-                 resData= {resObjs[2]}/>  
-                 <RestaurantCard 
-                 resData= {resObjs[3]}/>  
-                 <RestaurantCard 
-                 resData= {resObjs[4]}/>  
-                 <RestaurantCard 
-                 resData= {resObjs[5]}/>  
-                 <RestaurantCard 
-                 resData= {resObjs[6]}/>         
+                 resData= {resListOfObjs[1]}/>
+                      */}
+
+              {
+                resListOfObjs.map((restaurant) => (
+                    <RestaurantCard resData ={restaurant}/>
+                ))
+              }         
                 
             </div>
         </div>
