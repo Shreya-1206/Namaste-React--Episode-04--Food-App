@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 
 const Header = () => {
     return (
@@ -1704,7 +1704,7 @@ const Body =() => {
 
               {
                 resListOfObjs.map((restaurant) => (
-                    <RestaurantCard resData ={restaurant}/>
+                    <RestaurantCard key={restaurant.info.id} resData ={restaurant}/>
                 ))
               }         
                 
