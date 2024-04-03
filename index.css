@@ -38,12 +38,21 @@
     margin: 5px 10px;
     padding: 5px 8px;
     width: 250px;
-    height: 310px;
-    background-color: #FAEF5D;
+    height: 370px;
+    background-color: #FFF5C2;
+}
+.res-card > h3{
+    margin: 5px;
+}
+
+.res-card > h5{
+    margin: 5px;
 }
 .res-card:hover {
-    border: 2px solid black;
+    border: 2px;
+    border-radius: 8px;
     cursor: pointer;
+    background-color: #F4F27E;
 }
 .res-card > img {
     width: 100%;
