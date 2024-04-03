@@ -1668,19 +1668,19 @@ const resObjs = [
     }
   ];
 const RestaurantCard =(props) => {
-    const {resData}= props;
-   
-    // const {resName, cuisine, ratingStars, deliveryTime} =props;
-   
+     // const {resName, cuisine, ratingStars, deliveryTime} =props;
+     const {resData}= props;
+     //more optimized with optional operator
+     const {name, cuisines, cloudinaryImageId, avgRating, costForTwo, deliveryTime} = resData?.info
     return (
         <div className="res-card">
             <img alt = "res-img" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-             resData[0].info.cloudinaryImageId}/>
-            <h3>{resData[0].info.name}</h3>
-            <h5>{resData[0].info.cuisines.join(", ")}</h5>
-            <h5>{resData[0].info.avgRating} stars rating</h5>
-            <h5>{resData[0].info.costForTwo}  for two</h5>
-            <h5>{resData[0].info.sla.deliveryTime} minutes</h5>
+             cloudinaryImageId}/>
+            <h3>{name}</h3>
+            <h5>{cuisines.join(", ")}</h5>
+            <h5>{avgRating} stars rating</h5>
+            <h5>{costForTwo}  for two</h5>
+            <h5>{resData.info.sla.deliveryTime} minutes</h5>
         </div>
     )
 }
@@ -1697,7 +1697,19 @@ const Body =() => {
 
               {/* this with the swiggy data using props  */}
                 <RestaurantCard 
-                 resData= {resObjs}/>     
+                 resData= {resObjs[0]}/>  
+                <RestaurantCard 
+                 resData= {resObjs[1]}/>
+                <RestaurantCard 
+                 resData= {resObjs[2]}/>  
+                 <RestaurantCard 
+                 resData= {resObjs[3]}/>  
+                 <RestaurantCard 
+                 resData= {resObjs[4]}/>  
+                 <RestaurantCard 
+                 resData= {resObjs[5]}/>  
+                 <RestaurantCard 
+                 resData= {resObjs[6]}/>         
                 
             </div>
         </div>
